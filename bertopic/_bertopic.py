@@ -865,7 +865,7 @@ class BERTopic:
 
             # Fill dataframe with results
             topics_at_class = [(topic,
-                                ", ".join([words[0] for words in values][:5]),
+                                ", ".join([words[0] for words in values][:20]),
                                 topic_frequency[topic],
                                 class_) for topic, values in words_per_topic.items()]
             topics_per_class.extend(topics_at_class)
